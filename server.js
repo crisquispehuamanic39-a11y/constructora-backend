@@ -4,12 +4,19 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
 
-const app = express();  // ← ESTABA MAL, AHORA CORREGIDO
+const app = express();
 
 // Middlewares
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
+
+// Servir archivos estáticos desde la carpeta public
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Ruta para el frontend (cualquier ruta que no sea API devuelve index.html)
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Conectar a MongoDB
 console.log('📡 Conectando a MongoDB...');
@@ -25,7 +32,7 @@ mongoose.connect(process.env.MONGO_URI)
         console.error('📝 Mensaje:', err.message);
     });
 
-// Rutas
+// Rutas de API
 app.use('/api/contactos', require('./routes/contactos'));
 app.use('/api/proyectos', require('./routes/proyectos'));
 
