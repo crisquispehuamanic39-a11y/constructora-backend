@@ -10,7 +10,6 @@
     "keywords": [],
     "author": "Cristopher Quispe",
     "license": "ISC",
-    "type": "commonjs",
     "dependencies": {
         "cors": "^2.8.6",
         "dotenv": "^16.4.7",
