@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Constructora & Contratista | Grupo M2</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Header / Navegación -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <h1>GRUPO<span>M2</span></h1>
+            <p>Construcción & Contratistas</p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Sección Inicio (Hero) -->
+<section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h2>Construimos los espacios <span class="highlight">que transforman ciudades</span></h2>
+        <p>Más de 15 años de experiencia en ingeniería, construcción y contratación pública/privada.</p>
+        <a href="#contacto" class="btn-primary">Solicita cotización</a>
+    </div>
+</section>
+
+<!-- Nosotros -->
+<section id="nosotros" class="section">
+    <div class="container">
+        <h2 class="section-title">Nosotros</h2>
+        <div class="nosotros-grid">
+            <div class="nosotros-text">
+                <p>En <strong>Grupo M2</strong> somos especialistas en proyectos de infraestructura, edificaciones industriales y obras civiles. Nuestro equipo está conformado por ingenieros, arquitectos y técnicos con alto nivel de calidad y seguridad.</p>
+                <p>Misión: Ejecutar proyectos sostenibles que superen las expectativas de nuestros clientes.</p>
+                <p>Visión: Ser referentes en innovación constructiva en Latinoamérica para 2030.</p>
+            </div>
+            <div class="nosotros-stats">
+                <div class="stat"><span>+150</span> Proyectos entregados</div>
+                <div class="stat"><span>+12M m²</span> Construidos</div>
+                <div class="stat"><span>98%</span> Clientes satisfechos</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-drafting-compass"></i>
+                <h3>Diseño y planificación</h3>
+                <p>Estudios preliminares, BIM, presupuestos y cronogramas.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-hard-hat"></i>
+                <h3>Construcción general</h3>
+                <p>Obras civiles, edificios industriales, viviendas y locales comerciales.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-truck"></i>
+                <h3>Contratación pública</h3>
+                <p>Gestión de licitaciones, proyectos estatales y supervisión.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Proyectos -->
+<section id="proyectos" class="section">
+    <div class="container">
+        <h2 class="section-title">Proyectos destacados</h2>
+        <div class="projects-gallery">
+            <div class="project-item">
+                <img src="https://placehold.co/600x400/2c3e50/white?text=Puente+Metálico" alt="Puente">
+                <h3>Puente Metálico Vía 40</h3>
+                <p>Longitud 180m | Concreto + acero</p>
+            </div>
+            <div class="project-item">
+                <img src="https://placehold.co/600x400/34495e/white?text=Centro+Logístico" alt="Centro logístico">
+                <h3>Centro Logístico VYR</h3>
+                <p>12.000 m² / naves industriales</p>
+            </div>
+            <div class="project-item">
+                <img src="https://placehold.co/600x400/3b5999/white?text=Edificio+Corporativo" alt="Edificio">
+                <h3>Edificio Corporativo ALFA</h3>
+                <p>16 pisos + certificación LEED</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="section bg-dark">
+    <div class="container">
+        <h2 class="section-title light">Contáctanos</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="telefono" placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+                <textarea id="mensaje" rows="4" placeholder="¿En qué proyecto necesitas asistencia?" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar mensaje</button>
+            <p id="form-message" class="form-feedback"></p>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Grupo M2 Constructora. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="/JS/main.js"></script>
+</body>
+</html>
